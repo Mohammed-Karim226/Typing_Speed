@@ -1,0 +1,138 @@
+*{
+    scroll-behavior: smooth;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   /* -moz-transform-style: preserve-3d; 
+    -webkit-transform-style: preserve-3d; 
+    transform-style: preserve-3d;  */
+}
+body{
+    font-family: "cairo", sans-serif;
+
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* small */
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+/* end */
+.game{
+    background-color: rgb(239, 239, 239);
+    height: 500px;
+}
+.game .name{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(26, 108, 229);
+    padding: 20px;
+}
+
+.game .container .message{
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.game .container .message span{
+    font-weight: bold;
+    color: #006988;
+}
+.game .container .message span::before{
+    content: "[ ";
+}
+.game .container .message span::after{
+    content: " ]";
+}
+.game .container .start{
+    padding: 15px;
+    /* background-color: white; */
+    color: white;
+    text-align: center;
+    background-color: rgb(12, 125, 150);
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+    transition: .3s;
+}
+.game .container .start:hover{
+    background-color: rgb(8, 88, 106);
+}
+.game .container .the_word{
+text-align: center;
+font-weight: bold;
+font-size: 50px;
+color: #00886f;
+user-select: none;
+}
+
+.game .container .input{
+    padding: 15px;
+    width: 100%;
+}
+.game .container .input:focus{
+    outline: none;
+    caret-color: blue;
+    text-align: center;
+}
+
+.game .container .upcomming_words{
+    
+
+    padding: 15px;
+    background-color: white;
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game .container .upcomming_words div{
+    background-color: #00886f;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid orange;
+    color: white;
+    
+}
+.game .container .control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+.finish{
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+padding: 15px;
+}
+.finish .good{
+color:#00886f;
+}
+.finish .bad{
+color: red;
+}
